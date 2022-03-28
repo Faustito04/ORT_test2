@@ -8,4 +8,6 @@ npm i (para instalar las dependencias)
 
 para ignorar se escribe el nombre de la carpeta/archivo
 
-git checkout -b feat01 main
+## ramas
+
+git checkout -b feat01 (nombre de la nueva rama) main (rama de la que parto)
