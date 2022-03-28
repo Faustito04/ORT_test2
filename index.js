@@ -1,15 +1,14 @@
-const http = require('http');
+const http = require('http')
+const host = 'localhost'
+const port = 8000
 
-const host = 'localhost';
-const port = 8000;
-
-const server = http.createServer(function (req, res){
-    res.writeHead(200);
-    res.end("Hola Mundo Web!");
+const requestListener = http.createServer(function (req, res){
+    res.writeHead(200)
+    res.end("Hola Mundo Web!")
 });
 
-const server = http.createServer(requestListener);
+const server = http.createServer(requestListener)
 
-server.listen(port, host, () =>{
+server.listen(port, host, () => {
     console.log("...")
-});
+})
